@@ -1,0 +1,30 @@
+{
+  "id": "landscaping-design-estimator",
+  "title": "Landscaping Design Estimator App",
+  "industry": "Construction & Built Environment",
+  "industryId": "construction-built-environment",
+  "specialization": "Landscaping Design Estimator",
+  "sourcePlatformGroup": "construction-trades-platform",
+  "sources": [
+    "AIArchitecturalDesignGenerator",
+    "AILandscapingDesignEstimator",
+    "AIPlumbingElectricalHVACEstimator",
+    "cabinet-shop"
+  ],
+  "featureCount": 239,
+  "candidateFeatureCount": 313,
+  "eliminatedSimilarFeatures": 74,
+  "evidenceCount": 787,
+  "aiPageCount": 0,
+  "sourceAIPageCount": 0,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 1,
+    "seededTables": 3,
+    "seededRows": 94
+  },
+  "visibleFeatureCount": 5,
+  "featureVisibilityMode": "seeded-or-ai"
+}
