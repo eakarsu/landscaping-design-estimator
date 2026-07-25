@@ -1,5 +1,132 @@
 [
   {
+    "name": "About",
+    "canonicalKey": "about",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/about"
+    ],
+    "sourceProjects": [
+      "cabinet-shop"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "cabinet-shop",
+        "path": "src/app/(marketing)/about/page.tsx",
+        "route": "/about",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Accessibility Audit",
+    "canonicalKey": "accessibility audit",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/accessibility-audit"
+    ],
+    "sourceProjects": [
+      "AIArchitecturalDesignGenerator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "backend/src/routes/aiExtras.js:164",
+        "route": "/accessibility-audit",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "backend/src/routes/aiExtras.js:199",
+        "route": "/accessibility-audit",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Accounts",
+    "canonicalKey": "account",
+    "aliases": [],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/account",
+      "/admin/accounts"
+    ],
+    "sourceProjects": [
+      "cabinet-shop"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "cabinet-shop",
+        "path": "src/components/admin/sidebar.tsx:30",
+        "route": "",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "cabinet-shop",
+        "path": "src/app/account/page.tsx",
+        "route": "/account",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "cabinet-shop",
+        "path": "src/app/admin/accounts/page.tsx",
+        "route": "/admin/accounts",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Admin",
+    "canonicalKey": "admin",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/admin"
+    ],
+    "sourceProjects": [
+      "cabinet-shop"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "cabinet-shop",
+        "path": "src/app/admin/page.tsx",
+        "route": "/admin",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "AI Analysis",
     "canonicalKey": "ai analysis",
     "aliases": [
@@ -26,7 +153,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:117",
+        "path": "client/src/App.js:109",
         "route": "/ai-analysis",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -219,8 +346,88 @@
     ]
   },
   {
+    "name": "AI History",
+    "canonicalKey": "ai history",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/AIHistory",
+      "/ai-history",
+      "/api/ai-history"
+    ],
+    "sourceProjects": [
+      "AIArchitecturalDesignGenerator",
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "backend/src/server.js:137",
+        "route": "/api/ai-history",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/components/Navbar.jsx:51",
+        "route": "",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/App.jsx:113",
+        "route": "/ai-history",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIHistory.jsx",
+        "route": "/AIHistory",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/components/Sidebar.js:78",
+        "route": "",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/App.js:130",
+        "route": "/ai-history",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/components/Sidebar.js:78",
+        "route": "/ai-history",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/AIHistory.js",
+        "route": "/AIHistory",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "AI History Js Stub Needs Real Implementation",
-    "canonicalKey": "ai history implementation js needs real stub",
+    "canonicalKey": "ai history implementation js need real stub",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -446,25 +653,19 @@
     "canonicalKey": "ai",
     "aliases": [
       "AI Center",
-      "AI History",
       "AI Tools Page"
     ],
     "kinds": [
-      "api",
       "navigation",
       "page"
     ],
     "routes": [
       "/AICenter",
-      "/AIHistory",
       "/AIToolsPage",
       "/ai-center",
-      "/ai-history",
-      "/ai-tools",
-      "/api/ai-history"
+      "/ai-tools"
     ],
     "sourceProjects": [
-      "AIArchitecturalDesignGenerator",
       "AIConstructionManager",
       "AILandscapingDesignEstimator",
       "AIPlumbingElectricalHVACEstimator"
@@ -475,62 +676,6 @@
     ],
     "evidence": [
       {
-        "kind": "api",
-        "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:135",
-        "route": "/api/ai-history",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "frontend/src/components/Navbar.jsx:51",
-        "route": "",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "frontend/src/App.jsx:113",
-        "route": "/ai-history",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "frontend/src/pages/AIHistory.jsx",
-        "route": "/AIHistory",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIPlumbingElectricalHVACEstimator",
-        "path": "frontend/src/components/Sidebar.js:78",
-        "route": "",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIPlumbingElectricalHVACEstimator",
-        "path": "frontend/src/App.js:130",
-        "route": "/ai-history",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIPlumbingElectricalHVACEstimator",
-        "path": "frontend/src/components/Sidebar.js:78",
-        "route": "/ai-history",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIPlumbingElectricalHVACEstimator",
-        "path": "frontend/src/pages/AIHistory.js",
-        "route": "/AIHistory",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
         "kind": "navigation",
         "sourceProject": "AIConstructionManager",
         "path": "frontend/src/components/Navbar.js:88",
@@ -540,7 +685,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:176",
+        "path": "frontend/src/App.js:167",
         "route": "/ai-center",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -608,40 +753,14 @@
     ]
   },
   {
-    "name": "About",
-    "canonicalKey": "about",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/about"
-    ],
-    "sourceProjects": [
-      "cabinet-shop"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/landscaping-design-estimator"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/app/(marketing)/about/page.tsx",
-        "route": "/about",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      }
-    ]
-  },
-  {
-    "name": "Accessibility Audit",
-    "canonicalKey": "accessibility audit",
+    "name": "Alternatives",
+    "canonicalKey": "alternative",
     "aliases": [],
     "kinds": [
       "api"
     ],
     "routes": [
-      "/accessibility-audit"
+      "/:id/alternatives"
     ],
     "sourceProjects": [
       "AIArchitecturalDesignGenerator"
@@ -653,67 +772,8 @@
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/routes/aiExtras.js:164",
-        "route": "/accessibility-audit",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/routes/aiExtras.js:199",
-        "route": "/accessibility-audit",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      }
-    ]
-  },
-  {
-    "name": "Account",
-    "canonicalKey": "account",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/account"
-    ],
-    "sourceProjects": [
-      "cabinet-shop"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/landscaping-design-estimator"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/app/account/page.tsx",
-        "route": "/account",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      }
-    ]
-  },
-  {
-    "name": "Admin",
-    "canonicalKey": "admin",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/admin"
-    ],
-    "sourceProjects": [
-      "cabinet-shop"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/landscaping-design-estimator"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/app/admin/page.tsx",
-        "route": "/admin",
+        "path": "backend/src/routes/governedDesigns.js:4",
+        "route": "/:id/alternatives",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -738,7 +798,7 @@
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:313",
+        "path": "backend/src/server.js:315",
         "route": "/api/analytics",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -1074,14 +1134,14 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:160",
+        "path": "client/src/App.js:144",
         "route": "*",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:184",
+        "path": "frontend/src/App.js:175",
         "route": "*",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -1116,6 +1176,41 @@
     ]
   },
   {
+    "name": "Assess",
+    "canonicalKey": "assess",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cases/:id/assess"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager",
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/governance/routerFactory.js:190",
+        "route": "/cases/:id/assess",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/governance/routerFactory.js:190",
+        "route": "/cases/:id/assess",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Batch Generate",
     "canonicalKey": "batch generate",
     "aliases": [],
@@ -1135,7 +1230,7 @@
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:180",
+        "path": "backend/src/server.js:182",
         "route": "/api/:featureKey/batch-generate",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -1289,6 +1384,55 @@
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "backend/src/routes/plants.js:57",
         "route": "/:id/care-guide",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Cases",
+    "canonicalKey": "case",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cases"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager",
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/governance/routerFactory.js:68",
+        "route": "/cases",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/governance/routerFactory.js:84",
+        "route": "/cases",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/governance/routerFactory.js:68",
+        "route": "/cases",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/governance/routerFactory.js:84",
+        "route": "/cases",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -2037,13 +2181,6 @@
       },
       {
         "kind": "api",
-        "sourceProject": "AILandscapingDesignEstimator",
-        "path": "backend/src/services/openrouter.js:53",
-        "route": "/api/v1/chat/completions",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "api",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
         "path": "backend/src/services/aiService.js:19",
         "route": "/api/v1/chat/completions",
@@ -2076,6 +2213,55 @@
     ]
   },
   {
+    "name": "Connector Failures",
+    "canonicalKey": "connector failure",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/connector-failures"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager",
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/governance/routerFactory.js:304",
+        "route": "/connector-failures",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/governance/routerFactory.js:321",
+        "route": "/connector-failures",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/governance/routerFactory.js:304",
+        "route": "/connector-failures",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/governance/routerFactory.js:321",
+        "route": "/connector-failures",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Consultations",
     "canonicalKey": "consultation",
     "aliases": [],
@@ -2098,7 +2284,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:28",
+        "path": "src/components/admin/sidebar.tsx:31",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -2119,14 +2305,7 @@
       {
         "kind": "page",
         "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:51",
-        "route": "/api/consultations",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:57",
+        "path": "src/lib/assistant-tools.ts:54",
         "route": "/api/consultations",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -2430,15 +2609,12 @@
   },
   {
     "name": "Custom Views",
-    "canonicalKey": "custom view",
-    "aliases": [
-      "Custom Views Page"
-    ],
+    "canonicalKey": "custom",
+    "aliases": [],
     "kinds": [
       "page"
     ],
     "routes": [
-      "/CustomViewsPage",
       "/custom-views"
     ],
     "sourceProjects": [
@@ -2456,7 +2632,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:202",
+        "path": "frontend/src/App.js:184",
         "route": "/custom-views",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -2508,7 +2684,31 @@
         "path": "frontend/src/components/Sidebar.js:67",
         "route": "/custom-views",
         "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
+      }
+    ]
+  },
+  {
+    "name": "Custom Views Page",
+    "canonicalKey": "custom view",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CustomViewsPage"
+    ],
+    "sourceProjects": [
+      "AIArchitecturalDesignGenerator",
+      "AIConstructionManager",
+      "AILandscapingDesignEstimator",
+      "AIPlumbingElectricalHVACEstimator",
+      "AISmartBuildingManager"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
       {
         "kind": "page",
         "sourceProject": "AIConstructionManager",
@@ -2654,7 +2854,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:35",
+        "path": "src/components/admin/sidebar.tsx:39",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -3053,6 +3253,32 @@
     ]
   },
   {
+    "name": "Decision",
+    "canonicalKey": "decision",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/decision"
+    ],
+    "sourceProjects": [
+      "AILandscapingDesignEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "backend/src/governance/router.js:111",
+        "route": "/:id/decision",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Design Compare",
     "canonicalKey": "compare design",
     "aliases": [
@@ -3077,7 +3303,7 @@
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:258",
+        "path": "backend/src/server.js:260",
         "route": "/api/ai/compare-designs",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -3176,6 +3402,32 @@
     ]
   },
   {
+    "name": "Design Readiness",
+    "canonicalKey": "design readiness",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/design-readiness"
+    ],
+    "sourceProjects": [
+      "AIArchitecturalDesignGenerator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "backend/src/routes/runtimeAi.js:9",
+        "route": "/design-readiness",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Design Spec Pdf",
     "canonicalKey": "design pdf spec",
     "aliases": [],
@@ -3223,32 +3475,6 @@
         "sourceProject": "AIArchitecturalDesignGenerator",
         "path": "backend/src/routes/aiBacklog.js:158",
         "route": "/design-to-bim",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      }
-    ]
-  },
-  {
-    "name": "Designs Page",
-    "canonicalKey": "designs",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/DesignsPage"
-    ],
-    "sourceProjects": [
-      "AILandscapingDesignEstimator"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/landscaping-design-estimator"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AILandscapingDesignEstimator",
-        "path": "frontend/src/pages/DesignsPage.js",
-        "route": "/DesignsPage",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -3392,6 +3618,58 @@
     ]
   },
   {
+    "name": "Erasure Complete",
+    "canonicalKey": "complete erasure",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/erasure-complete"
+    ],
+    "sourceProjects": [
+      "AILandscapingDesignEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "backend/src/governance/router.js:218",
+        "route": "/:id/erasure-complete",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Erasure Request",
+    "canonicalKey": "erasure request",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/erasure-request"
+    ],
+    "sourceProjects": [
+      "AILandscapingDesignEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "backend/src/governance/router.js:188",
+        "route": "/:id/erasure-request",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Estimate",
     "canonicalKey": "estimate",
     "aliases": [],
@@ -3431,7 +3709,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:27",
+        "path": "src/components/admin/sidebar.tsx:29",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -3561,6 +3839,67 @@
     ]
   },
   {
+    "name": "Events",
+    "canonicalKey": "event",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/events"
+    ],
+    "sourceProjects": [
+      "AILandscapingDesignEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "backend/src/governance/router.js:78",
+        "route": "/:id/events",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Evidence",
+    "canonicalKey": "evidence",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cases/:id/evidence"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager",
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/governance/routerFactory.js:153",
+        "route": "/cases/:id/evidence",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/governance/routerFactory.js:153",
+        "route": "/cases/:id/evidence",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Expenses",
     "canonicalKey": "expense",
     "aliases": [
@@ -3673,6 +4012,32 @@
     ]
   },
   {
+    "name": "Export",
+    "canonicalKey": "export",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/export"
+    ],
+    "sourceProjects": [
+      "AILandscapingDesignEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "backend/src/governance/router.js:63",
+        "route": "/:id/export",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Fa Qs",
     "canonicalKey": "fa qs",
     "aliases": [],
@@ -3690,7 +4055,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:34",
+        "path": "src/components/admin/sidebar.tsx:38",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -3725,13 +4090,6 @@
         "kind": "page",
         "sourceProject": "cabinet-shop",
         "path": "src/lib/assistant-tools.ts:48",
-        "route": "/api/faqs",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:77",
         "route": "/api/faqs",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -3775,7 +4133,7 @@
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:375",
+        "path": "backend/src/server.js:377",
         "route": "/api/favorites",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -3993,7 +4351,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:30",
+        "path": "src/components/admin/sidebar.tsx:34",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -4016,6 +4374,32 @@
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "frontend/src/pages/GalleryPage.js",
         "route": "/GalleryPage",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Gap Agentic",
+    "canonicalKey": "agentic gap",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapAgentic"
+    ],
+    "sourceProjects": [
+      "AILandscapingDesignEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "frontend/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -4125,34 +4509,8 @@
     ]
   },
   {
-    "name": "Gap Agentic",
-    "canonicalKey": "agentic gap",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/GapAgentic"
-    ],
-    "sourceProjects": [
-      "AILandscapingDesignEstimator"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/landscaping-design-estimator"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AILandscapingDesignEstimator",
-        "path": "frontend/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      }
-    ]
-  },
-  {
     "name": "Gap Aihistory Js Stub Needs Real Implementation",
-    "canonicalKey": "aihistory gap implementation js needs real stub",
+    "canonicalKey": "aihistory gap implementation js need real stub",
     "aliases": [
       "Gap Aihistory Js Stub Needs Real Implementation Page"
     ],
@@ -4472,7 +4830,7 @@
   },
   {
     "name": "Gap Jobquotes Without Quote",
-    "canonicalKey": "gap jobquotes quote without",
+    "canonicalKey": "gap jobquote quote without",
     "aliases": [
       "Gap Jobquotes Without Quote Page"
     ],
@@ -4714,7 +5072,7 @@
   },
   {
     "name": "Gap No Accounting System Integration Quickbooks Freshb",
-    "canonicalKey": "accounting freshb gap integration no quickbooks",
+    "canonicalKey": "accounting freshb gap integration no quickbook",
     "aliases": [
       "Gap No Accounting System Integration Quickbooks Freshb Page"
     ],
@@ -4902,7 +5260,7 @@
   },
   {
     "name": "Gap No Notifications Module Grep 0",
-    "canonicalKey": "0 gap grep no notifications",
+    "canonicalKey": "0 gap grep no notification",
     "aliases": [],
     "kinds": [
       "page"
@@ -4935,7 +5293,7 @@
   },
   {
     "name": "Gap No Notifications Module Grep0 Page",
-    "canonicalKey": "gap grep0 no notifications",
+    "canonicalKey": "gap grep0 no notification",
     "aliases": [],
     "kinds": [
       "page"
@@ -4961,7 +5319,7 @@
   },
   {
     "name": "Gap No Real Integration With Permit Code Databases Onl",
-    "canonicalKey": "code databases gap integration no onl permit real with",
+    "canonicalKey": "code database gap integration no onl permit real with",
     "aliases": [
       "Gap No Real Integration With Permit Code Databases Onl Page"
     ],
@@ -5204,7 +5562,7 @@
   },
   {
     "name": "Gap Schedules Without Schedule",
-    "canonicalKey": "gap schedule schedules without",
+    "canonicalKey": "gap schedule without",
     "aliases": [
       "Gap Schedules Without Schedule Page"
     ],
@@ -5458,6 +5816,7 @@
     ],
     "routes": [
       "/ai/history",
+      "/cases/:id/history",
       "/history"
     ],
     "sourceProjects": [
@@ -5472,6 +5831,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/governance/routerFactory.js:136",
+        "route": "/cases/:id/history",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIHomeRenovationProjectManager",
@@ -5650,6 +6016,13 @@
       {
         "kind": "api",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/governance/routerFactory.js:136",
+        "route": "/cases/:id/history",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
         "path": "backend/src/routes/aiHistory.js:10",
         "route": "/history",
         "originApp": "construction-built-environment/landscaping-design-estimator"
@@ -5778,6 +6151,32 @@
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
         "path": "backend/src/routes/gapFeat_schedules_without_schedule.js:99",
         "route": "/history",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Integrations",
+    "canonicalKey": "integration",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/integrations"
+    ],
+    "sourceProjects": [
+      "AILandscapingDesignEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "backend/src/governance/router.js:155",
+        "route": "/:id/integrations",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -6003,21 +6402,34 @@
   {
     "name": "Item Detail",
     "canonicalKey": "item",
-    "aliases": [],
+    "aliases": [
+      "Items"
+    ],
     "kinds": [
+      "api",
       "navigation",
       "page"
     ],
     "routes": [
-      "/ItemDetail"
+      "/ItemDetail",
+      "/organizations/:organizationId/projects/:projectId/items"
     ],
     "sourceProjects": [
-      "AIArchitecturalDesignGenerator"
+      "AIArchitecturalDesignGenerator",
+      "AIConstructionManager"
     ],
     "consolidatedFromApps": [
+      "construction-built-environment/construction-manager",
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIConstructionManager",
+        "path": "backend/routes/controlledWorkflow.js:15",
+        "route": "/organizations/:organizationId/projects/:projectId/items",
+        "originApp": "construction-built-environment/construction-manager"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -6126,7 +6538,7 @@
   },
   {
     "name": "Job Quotes Without Quote",
-    "canonicalKey": "job quote quotes without",
+    "canonicalKey": "job quote without",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -6618,7 +7030,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:107",
+        "path": "client/src/App.js:99",
         "route": "/materials",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -6662,6 +7074,13 @@
         "sourceProject": "AIHomeRenovationProjectManager",
         "path": "client/src/pages/Materials.js",
         "route": "/Materials",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/pages/MaterialsPage.js",
+        "route": "/MaterialsPage",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
@@ -6730,7 +7149,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:29",
+        "path": "src/components/admin/sidebar.tsx:33",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -6764,20 +7183,6 @@
       },
       {
         "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:62",
-        "route": "/api/materials",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/pages/MaterialsPage.js",
-        "route": "/MaterialsPage",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "frontend/src/pages/MaterialsPage.js",
         "route": "/MaterialsPage",
@@ -6787,7 +7192,7 @@
   },
   {
     "name": "Materials Heatmap",
-    "canonicalKey": "heatmap materials",
+    "canonicalKey": "heatmap material",
     "aliases": [],
     "kinds": [
       "api"
@@ -6813,7 +7218,7 @@
   },
   {
     "name": "Materials Pricing",
-    "canonicalKey": "materials pricing",
+    "canonicalKey": "material pricing",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -6831,40 +7236,6 @@
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
         "path": "frontend/src/components/Sidebar.js:43",
         "route": "",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      }
-    ]
-  },
-  {
-    "name": "Me",
-    "canonicalKey": "me",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/me"
-    ],
-    "sourceProjects": [
-      "AIArchitecturalDesignGenerator",
-      "AIPlumbingElectricalHVACEstimator"
-    ],
-    "consolidatedFromApps": [
-      "construction-built-environment/landscaping-design-estimator"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/routes/auth.js:102",
-        "route": "/me",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlumbingElectricalHVACEstimator",
-        "path": "backend/src/routes/auth.js:52",
-        "route": "/me",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -6919,7 +7290,7 @@
   },
   {
     "name": "No Accounting System Integration Quick Books Fresh Books",
-    "canonicalKey": "accounting book books fresh integration no quick",
+    "canonicalKey": "accounting book fresh integration no quick",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -6967,7 +7338,7 @@
   },
   {
     "name": "No Customer Financing Options Credit Payment Plans",
-    "canonicalKey": "credit customer financing no options payment plan",
+    "canonicalKey": "credit customer financing no option payment plan",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -7015,7 +7386,7 @@
   },
   {
     "name": "No Notifications Module Grep 0",
-    "canonicalKey": "0 grep no notifications",
+    "canonicalKey": "0 grep no notification",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -7066,28 +7437,16 @@
     "canonicalKey": "no webhook",
     "aliases": [],
     "kinds": [
-      "navigation",
-      "page"
+      "navigation"
     ],
-    "routes": [
-      "/gap/no-webhooks"
-    ],
+    "routes": [],
     "sourceProjects": [
-      "AIConstructionManager",
       "AIPlumbingElectricalHVACEstimator"
     ],
     "consolidatedFromApps": [
-      "construction-built-environment/construction-manager",
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/App.js:201",
-        "route": "/gap/no-webhooks",
-        "originApp": "construction-built-environment/construction-manager"
-      },
       {
         "kind": "navigation",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -7152,6 +7511,90 @@
         "sourceProject": "AIArchitecturalDesignGenerator",
         "path": "backend/src/routes/features.js:400",
         "route": "/:id/notes",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Operations",
+    "canonicalKey": "operation",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/admin/operations",
+      "/codex/operations"
+    ],
+    "sourceProjects": [
+      "AIArchitecturalDesignGenerator",
+      "AIConstructionBidAnalyzer",
+      "AIConstructionManager",
+      "AIHomeRenovationProjectManager",
+      "AILandscapingDesignEstimator",
+      "AIPlumbingElectricalHVACEstimator",
+      "AISmartBuildingManager",
+      "cabinet-shop"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/App.js:134",
+        "route": "/codex/operations",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionManager",
+        "path": "frontend/src/App.js:159",
+        "route": "/codex/operations",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "client/src/App.js:78",
+        "route": "/codex/operations",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "frontend/src/App.jsx:94",
+        "route": "/codex/operations",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/App.jsx:62",
+        "route": "/codex/operations",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "frontend/src/App.js:86",
+        "route": "/codex/operations",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/App.js:112",
+        "route": "/codex/operations",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "cabinet-shop",
+        "path": "src/app/admin/operations/page.tsx",
+        "route": "/admin/operations",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -7314,7 +7757,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:26",
+        "path": "src/components/admin/sidebar.tsx:28",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -7351,7 +7794,7 @@
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:407",
+        "path": "backend/src/server.js:409",
         "route": "/api/auth/password",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -7493,7 +7936,7 @@
   },
   {
     "name": "Permits Inspections",
-    "canonicalKey": "inspection permits",
+    "canonicalKey": "inspection permit",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -7755,6 +8198,41 @@
     ]
   },
   {
+    "name": "Policy",
+    "canonicalKey": "policy",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/policy"
+    ],
+    "sourceProjects": [
+      "AIHomeRenovationProjectManager",
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/governance/routerFactory.js:52",
+        "route": "/policy",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/governance/routerFactory.js:52",
+        "route": "/policy",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Precedent Search",
     "canonicalKey": "precedent search",
     "aliases": [],
@@ -7776,6 +8254,32 @@
         "sourceProject": "AIArchitecturalDesignGenerator",
         "path": "backend/src/routes/aiBacklog.js:118",
         "route": "/precedent-search",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Privacy",
+    "canonicalKey": "privacy",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/privacy"
+    ],
+    "sourceProjects": [
+      "cabinet-shop"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "cabinet-shop",
+        "path": "src/app/(marketing)/privacy/page.tsx",
+        "route": "/privacy",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -7826,7 +8330,7 @@
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:389",
+        "path": "backend/src/server.js:391",
         "route": "/api/auth/profile",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -7989,7 +8493,7 @@
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:104",
+        "path": "client/src/App.js:96",
         "route": "/projects",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -8040,6 +8544,13 @@
         "sourceProject": "AIHomeRenovationProjectManager",
         "path": "client/src/pages/Projects.js",
         "route": "/Projects",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIConstructionBidAnalyzer",
+        "path": "client/src/pages/ProjectsPage.js",
+        "route": "/ProjectsPage",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
@@ -8135,20 +8646,6 @@
       },
       {
         "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:65",
-        "route": "/api/projects",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/pages/ProjectsPage.js",
-        "route": "/ProjectsPage",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "frontend/src/pages/ProjectsPage.js",
         "route": "/ProjectsPage",
@@ -8211,6 +8708,32 @@
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "frontend/src/pages/ProposalsPage.js",
         "route": "/ProposalsPage",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Provider",
+    "canonicalKey": "provider",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/providers/:provider"
+    ],
+    "sourceProjects": [
+      "AIArchitecturalDesignGenerator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "backend/src/routes/governedDesigns.js:6",
+        "route": "/:id/providers/:provider",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -8293,14 +8816,7 @@
       {
         "kind": "page",
         "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:50",
-        "route": "/api/quotes",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:55",
+        "path": "src/lib/assistant-tools.ts:53",
         "route": "/api/quotes",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -8335,21 +8851,21 @@
       {
         "kind": "api",
         "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "server/routes/auth.js:49",
+        "path": "server/routes/auth.js:50",
         "route": "/register",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
         "kind": "api",
         "sourceProject": "AIConstructionManager",
-        "path": "backend/routes/auth.js:7",
+        "path": "backend/routes/auth.js:8",
         "route": "/register",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
         "kind": "api",
         "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "server/routes/auth.js:30",
+        "path": "server/routes/auth.js:31",
         "route": "/register",
         "originApp": "construction-built-environment/construction-manager"
       },
@@ -8377,7 +8893,7 @@
       {
         "kind": "api",
         "sourceProject": "AILandscapingDesignEstimator",
-        "path": "backend/src/routes/auth.js:29",
+        "path": "backend/src/routes/auth.js:37",
         "route": "/register",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -8444,7 +8960,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:36",
+        "path": "src/components/admin/sidebar.tsx:40",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -8485,7 +9001,7 @@
   },
   {
     "name": "Reports Analytics",
-    "canonicalKey": "analytic reports",
+    "canonicalKey": "analytic report",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -8558,6 +9074,32 @@
     ]
   },
   {
+    "name": "Retire",
+    "canonicalKey": "retire",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/retire"
+    ],
+    "sourceProjects": [
+      "AILandscapingDesignEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "backend/src/governance/router.js:134",
+        "route": "/:id/retire",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Review",
     "canonicalKey": "review",
     "aliases": [],
@@ -8596,7 +9138,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:32",
+        "path": "src/components/admin/sidebar.tsx:36",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -8940,6 +9482,30 @@
     ]
   },
   {
+    "name": "Sales Controls",
+    "canonicalKey": "control sale",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "cabinet-shop"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "cabinet-shop",
+        "path": "src/components/admin/sidebar.tsx:32",
+        "route": "",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Saved Materials",
     "canonicalKey": "material saved",
     "aliases": [],
@@ -9087,7 +9653,7 @@
   },
   {
     "name": "Schedules Without Schedule",
-    "canonicalKey": "schedule schedules without",
+    "canonicalKey": "schedule without",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -9153,7 +9719,7 @@
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:93",
+        "path": "backend/src/server.js:95",
         "route": "/api/search",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -9271,7 +9837,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:31",
+        "path": "src/components/admin/sidebar.tsx:35",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -9288,25 +9854,21 @@
         "path": "src/lib/assistant-tools.ts:46",
         "route": "/api/services",
         "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:68",
-        "route": "/api/services",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
   },
   {
     "name": "Settings",
     "canonicalKey": "setting",
-    "aliases": [],
+    "aliases": [
+      "Settings Page"
+    ],
     "kinds": [
       "navigation",
       "page"
     ],
     "routes": [
+      "/SettingsPage",
       "/admin/settings",
       "/api/settings",
       "/settings"
@@ -9328,9 +9890,16 @@
         "originApp": "construction-built-environment/construction-manager"
       },
       {
+        "kind": "page",
+        "sourceProject": "AISmartBuildingManager",
+        "path": "frontend/src/pages/SettingsPage.jsx",
+        "route": "/SettingsPage",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:37",
+        "path": "src/components/admin/sidebar.tsx:41",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -9344,14 +9913,7 @@
       {
         "kind": "page",
         "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:52",
-        "route": "/api/settings",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:80",
+        "path": "src/lib/assistant-tools.ts:50",
         "route": "/api/settings",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -9514,6 +10076,32 @@
         "sourceProject": "AIArchitecturalDesignGenerator",
         "path": "backend/src/routes/aiBacklog.js:355",
         "route": "/structural-advisor",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Submit",
+    "canonicalKey": "submit",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/submit"
+    ],
+    "sourceProjects": [
+      "AILandscapingDesignEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "backend/src/governance/router.js:93",
+        "route": "/:id/submit",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -9746,7 +10334,7 @@
       {
         "kind": "navigation",
         "sourceProject": "cabinet-shop",
-        "path": "src/components/admin/sidebar.tsx:33",
+        "path": "src/components/admin/sidebar.tsx:37",
         "route": "",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
@@ -9761,13 +10349,6 @@
         "kind": "page",
         "sourceProject": "cabinet-shop",
         "path": "src/lib/assistant-tools.ts:49",
-        "route": "/api/team",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:74",
         "route": "/api/team",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
@@ -9951,13 +10532,6 @@
         "path": "src/lib/assistant-tools.ts:47",
         "route": "/api/testimonials",
         "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "cabinet-shop",
-        "path": "src/lib/assistant-tools.ts:71",
-        "route": "/api/testimonials",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
   },
@@ -10043,6 +10617,59 @@
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "frontend/src/pages/TimeTrackingPage.js",
         "route": "/TimeTrackingPage",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Transition",
+    "canonicalKey": "transition",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/transition",
+      "/cases/:id/transitions",
+      "/items/:id/transition"
+    ],
+    "sourceProjects": [
+      "AIArchitecturalDesignGenerator",
+      "AIConstructionManager",
+      "AIHomeRenovationProjectManager",
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/construction-manager",
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIConstructionManager",
+        "path": "backend/routes/controlledWorkflow.js:30",
+        "route": "/items/:id/transition",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIHomeRenovationProjectManager",
+        "path": "server/governance/routerFactory.js:225",
+        "route": "/cases/:id/transitions",
+        "originApp": "construction-built-environment/construction-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "backend/src/routes/governedDesigns.js:5",
+        "route": "/:id/transition",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/governance/routerFactory.js:225",
+        "route": "/cases/:id/transitions",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
