@@ -11,12 +11,12 @@
     "AIPlumbingElectricalHVACEstimator",
     "cabinet-shop"
   ],
-  "featureCount": 259,
-  "candidateFeatureCount": 333,
-  "eliminatedSimilarFeatures": 74,
-  "evidenceCount": 818,
-  "aiPageCount": 0,
-  "sourceAIPageCount": 0,
+  "featureCount": 269,
+  "candidateFeatureCount": 341,
+  "eliminatedSimilarFeatures": 72,
+  "evidenceCount": 816,
+  "aiPageCount": 40,
+  "sourceAIPageCount": 40,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
@@ -25,6 +25,6 @@
     "seededTables": 2,
     "seededRows": 62
   },
-  "visibleFeatureCount": 2,
+  "visibleFeatureCount": 41,
   "featureVisibilityMode": "seeded-or-ai"
 }

@@ -542,17 +542,12 @@
   {
     "name": "AI Quote Estimate",
     "canonicalKey": "ai estimate quote",
-    "aliases": [
-      "Quote Estimate AI"
-    ],
+    "aliases": [],
     "kinds": [
-      "api",
       "page"
     ],
     "routes": [
-      "/QuoteEstimateAI",
-      "/ai-quote-estimate",
-      "/quote-estimate-ai"
+      "/ai-quote-estimate"
     ],
     "sourceProjects": [
       "AIPlumbingElectricalHVACEstimator"
@@ -573,20 +568,6 @@
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
         "path": "frontend/src/components/Sidebar.js:76",
         "route": "/ai-quote-estimate",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlumbingElectricalHVACEstimator",
-        "path": "backend/src/routes/aiHistory.js:164",
-        "route": "/quote-estimate-ai",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIPlumbingElectricalHVACEstimator",
-        "path": "frontend/src/pages/QuoteEstimateAI.js",
-        "route": "/QuoteEstimateAI",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -809,143 +790,23 @@
     "canonicalKey": "analyze",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
       "/:id/analyze",
       "/ai/analyze",
-      "/analyze"
+      "/job-quotes?tool=analyze",
+      "/projects?tool=analyze"
     ],
     "sourceProjects": [
-      "AIHomeRenovationProjectManager",
       "AILandscapingDesignEstimator",
-      "AIPlumbingElectricalHVACEstimator",
-      "AISmartBuildingManager"
+      "AIPlumbingElectricalHVACEstimator"
     ],
     "consolidatedFromApps": [
-      "construction-built-environment/construction-manager",
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "server/routes/budget.js:140",
-        "route": "/ai/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "server/routes/projects.js:82",
-        "route": "/ai/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "server/routes/visionProgressTracker.js:15",
-        "route": "/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/climate.js:65",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/comfort.js:65",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/elevators.js:77",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/energy.js:73",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/fire.js:77",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/hvac.js:86",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/lighting.js:65",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/maintenance.js:66",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/parking.js:77",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/security.js:65",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/space.js:65",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/visitors.js:77",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/waste.js:77",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISmartBuildingManager",
-        "path": "backend/routes/water.js:77",
-        "route": "/:id/analyze",
-        "originApp": "construction-built-environment/construction-manager"
-      },
       {
         "kind": "api",
         "sourceProject": "AILandscapingDesignEstimator",
@@ -972,6 +833,20 @@
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "backend/src/routes/suppliers.js:90",
         "route": "/:id/analyze",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/JobQuotes.js:1",
+        "route": "/job-quotes?tool=analyze",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Projects.js:1",
+        "route": "/projects?tool=analyze",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
       {
@@ -1086,10 +961,12 @@
     "canonicalKey": "analyze photo",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/analyze-photo"
+      "/analyze-photo",
+      "/job-quotes?tool=analyze-photo"
     ],
     "sourceProjects": [
       "AIPlumbingElectricalHVACEstimator"
@@ -1098,6 +975,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/JobQuotes.js:1",
+        "route": "/job-quotes?tool=analyze-photo",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -1287,13 +1171,41 @@
     ]
   },
   {
+    "name": "Building Code Compliance",
+    "canonicalKey": "building code compliance",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/code-compliance"
+    ],
+    "sourceProjects": [
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/CodeCompliance.js:1",
+        "route": "/code-compliance",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Cad Conversion",
     "canonicalKey": "cad conversion",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=cad-conversion",
       "/cad-conversion"
     ],
     "sourceProjects": [
@@ -1303,6 +1215,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=cad-conversion",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -1709,9 +1628,11 @@
     "canonicalKey": "claim",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=claim",
       "/designs/:id/lock/claim"
     ],
     "sourceProjects": [
@@ -1721,6 +1642,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=claim",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -1826,6 +1754,7 @@
     "canonicalKey": "code compliance",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "model",
       "navigation",
@@ -1833,6 +1762,7 @@
     ],
     "routes": [
       "/CodeCompliance",
+      "/ai-code-compliance?tool=code-compliance",
       "/code-compliance"
     ],
     "sourceProjects": [
@@ -1848,6 +1778,13 @@
         "sourceProject": "AIArchitecturalDesignGenerator",
         "path": "backend/src/routes/customViews.js:440",
         "route": "/code-compliance",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/CodeComplianceChecker.js:58",
+        "route": "/ai-code-compliance?tool=code-compliance",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
       {
@@ -2046,9 +1983,11 @@
     "canonicalKey": "comment",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=comments",
       "/comments",
       "/designs/:id/comments"
     ],
@@ -2059,6 +1998,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=comments",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -2115,6 +2061,41 @@
         "sourceProject": "AIArchitecturalDesignGenerator",
         "path": "frontend/src/App.jsx:121",
         "route": "/compare",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Compare Designs",
+    "canonicalKey": "compare design",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/api/ai/compare-designs",
+      "/compare?tool=compare-designs"
+    ],
+    "sourceProjects": [
+      "AIArchitecturalDesignGenerator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/DesignCompare.jsx:78",
+        "route": "/compare?tool=compare-designs",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "backend/src/server.js:260",
+        "route": "/api/ai/compare-designs",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -2501,9 +2482,11 @@
     "canonicalKey": "crew matcher skill",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=crew-skill-matcher",
       "/crew-skill-matcher"
     ],
     "sourceProjects": [
@@ -2513,6 +2496,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "frontend/src/pages/AIToolsPage.js:30",
+        "route": "/ai-tools?tool=crew-skill-matcher",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AILandscapingDesignEstimator",
@@ -2768,6 +2758,32 @@
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
         "path": "backend/src/routes/jobQuotes.js:113",
         "route": "/:id/customer-accept",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Customer Management",
+    "canonicalKey": "customer",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/customers"
+    ],
+    "sourceProjects": [
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Customers.js:1",
+        "route": "/customers",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -3281,17 +3297,13 @@
   {
     "name": "Design Compare",
     "canonicalKey": "compare design",
-    "aliases": [
-      "Compare Designs"
-    ],
+    "aliases": [],
     "kinds": [
-      "api",
       "navigation",
       "page"
     ],
     "routes": [
-      "/DesignCompare",
-      "/api/ai/compare-designs"
+      "/DesignCompare"
     ],
     "sourceProjects": [
       "AIArchitecturalDesignGenerator"
@@ -3300,13 +3312,6 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIArchitecturalDesignGenerator",
-        "path": "backend/src/server.js:260",
-        "route": "/api/ai/compare-designs",
-        "originApp": "construction-built-environment/landscaping-design-estimator"
-      },
       {
         "kind": "navigation",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -3328,9 +3333,11 @@
     "canonicalKey": "check design feasibility",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=design-feasibility",
       "/design-feasibility-check"
     ],
     "sourceProjects": [
@@ -3340,6 +3347,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "frontend/src/pages/AIToolsPage.js:5",
+        "route": "/ai-tools?tool=design-feasibility",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AILandscapingDesignEstimator",
@@ -3458,9 +3472,11 @@
     "canonicalKey": "bim design to",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=design-to-bim",
       "/design-to-bim"
     ],
     "sourceProjects": [
@@ -3470,6 +3486,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=design-to-bim",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -3484,9 +3507,11 @@
     "canonicalKey": "energy model",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=energy-model",
       "/energy-model"
     ],
     "sourceProjects": [
@@ -3496,6 +3521,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=energy-model",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -3613,6 +3645,32 @@
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "frontend/src/pages/EquipmentPage.js",
         "route": "/EquipmentPage",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Equipment Management",
+    "canonicalKey": "equipment",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/equipment"
+    ],
+    "sourceProjects": [
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Equipment.js:1",
+        "route": "/equipment",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -3895,6 +3953,32 @@
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
         "path": "backend/src/governance/routerFactory.js:153",
         "route": "/cases/:id/evidence",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Expense Tracking",
+    "canonicalKey": "expense tracking",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/expenses"
+    ],
+    "sourceProjects": [
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Expenses.js:1",
+        "route": "/expenses",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -6297,9 +6381,12 @@
     "canonicalKey": "invoicing",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/invoices"
+    ],
     "sourceProjects": [
       "AIPlumbingElectricalHVACEstimator"
     ],
@@ -6307,6 +6394,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Invoices.js:1",
+        "route": "/invoices",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -6561,6 +6655,32 @@
     ]
   },
   {
+    "name": "Job Scheduling",
+    "canonicalKey": "job scheduling",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/schedules"
+    ],
+    "sourceProjects": [
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Schedules.js:1",
+        "route": "/schedules",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
     "name": "Layout",
     "canonicalKey": "layout",
     "aliases": [],
@@ -6713,9 +6833,11 @@
     "canonicalKey": "cost maintenance projector",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=maintenance-cost-projector",
       "/maintenance-cost-projector"
     ],
     "sourceProjects": [
@@ -6725,6 +6847,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "frontend/src/pages/AIToolsPage.js:17",
+        "route": "/ai-tools?tool=maintenance-cost-projector",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AILandscapingDesignEstimator",
@@ -6815,12 +6944,14 @@
     "canonicalKey": "estimate material",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "model",
       "page"
     ],
     "routes": [
       "/MaterialEstimate",
+      "/ai-material-estimate?tool=material-estimate",
       "/material-estimate"
     ],
     "sourceProjects": [
@@ -6836,6 +6967,13 @@
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "backend/src/models/MaterialEstimate.js",
         "route": "",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/MaterialEstimate.js:53",
+        "route": "/ai-material-estimate?tool=material-estimate",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       },
       {
@@ -6883,9 +7021,11 @@
     "canonicalKey": "library material",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=material-library",
       "/material-library"
     ],
     "sourceProjects": [
@@ -6895,6 +7035,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=material-library",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -6916,9 +7063,11 @@
     "canonicalKey": "material monitor price",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=material-price-monitor",
       "/material-price-monitor"
     ],
     "sourceProjects": [
@@ -6928,6 +7077,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "frontend/src/pages/AIToolsPage.js:56",
+        "route": "/ai-tools?tool=material-price-monitor",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AILandscapingDesignEstimator",
@@ -7010,7 +7166,6 @@
     ],
     "sourceProjects": [
       "AIConstructionBidAnalyzer",
-      "AIHomeRenovationProjectManager",
       "AILandscapingDesignEstimator",
       "AIPlumbingElectricalHVACEstimator",
       "cabinet-shop"
@@ -7020,62 +7175,6 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/components/Sidebar.js:10",
-        "route": "",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:99",
-        "route": "/materials",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/components/Sidebar.js:10",
-        "route": "/materials",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/pages/Dashboard.js:9",
-        "route": "/materials",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/App.js:89",
-        "route": "/materials",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/components/Layout.js:13",
-        "route": "/materials",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/pages/Dashboard.js:63",
-        "route": "/materials",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/pages/Materials.js",
-        "route": "/Materials",
-        "originApp": "construction-built-environment/construction-manager"
-      },
       {
         "kind": "page",
         "sourceProject": "AIConstructionBidAnalyzer",
@@ -7221,9 +7320,12 @@
     "canonicalKey": "material pricing",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/materials"
+    ],
     "sourceProjects": [
       "AIPlumbingElectricalHVACEstimator"
     ],
@@ -7231,6 +7333,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Materials.js:1",
+        "route": "/materials",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -7854,42 +7963,12 @@
       "/permits"
     ],
     "sourceProjects": [
-      "AIHomeRenovationProjectManager",
       "AIPlumbingElectricalHVACEstimator"
     ],
     "consolidatedFromApps": [
-      "construction-built-environment/construction-manager",
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/App.js:84",
-        "route": "/permits",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/components/Layout.js:8",
-        "route": "/permits",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/pages/Dashboard.js:53",
-        "route": "/permits",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/pages/Permits.js",
-        "route": "/Permits",
-        "originApp": "construction-built-environment/construction-manager"
-      },
       {
         "kind": "model",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -7939,9 +8018,12 @@
     "canonicalKey": "inspection permit",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/permits"
+    ],
     "sourceProjects": [
       "AIPlumbingElectricalHVACEstimator"
     ],
@@ -7949,6 +8031,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Permits.js:1",
+        "route": "/permits",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -8049,10 +8138,12 @@
     "canonicalKey": "plant recommendation",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/plant-recommendations"
+      "/plant-recommendations",
+      "/projects/:id?tool=plant-recommendations"
     ],
     "sourceProjects": [
       "AILandscapingDesignEstimator"
@@ -8061,6 +8152,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "frontend/src/pages/ProjectDetail.js:238",
+        "route": "/projects/:id?tool=plant-recommendations",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AILandscapingDesignEstimator",
@@ -8176,9 +8274,11 @@
     "canonicalKey": "export plugin",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=plugin-export",
       "/plugin-export"
     ],
     "sourceProjects": [
@@ -8188,6 +8288,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=plugin-export",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -8237,9 +8344,11 @@
     "canonicalKey": "precedent search",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=precedent-search",
       "/precedent-search"
     ],
     "sourceProjects": [
@@ -8249,6 +8358,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=precedent-search",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -8404,12 +8520,14 @@
     "canonicalKey": "project timeline",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
     ],
     "routes": [
       "/ProjectTimeline",
+      "/ai-project-timeline?tool=project-timeline",
       "/project-timeline"
     ],
     "sourceProjects": [
@@ -8419,6 +8537,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/ProjectTimeline.js:53",
+        "route": "/ai-project-timeline?tool=project-timeline",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -8466,7 +8591,6 @@
     "sourceProjects": [
       "AIConstructionBidAnalyzer",
       "AIConstructionManager",
-      "AIHomeRenovationProjectManager",
       "AILandscapingDesignEstimator",
       "AIPlumbingElectricalHVACEstimator",
       "cabinet-shop"
@@ -8481,69 +8605,6 @@
         "sourceProject": "AIConstructionManager",
         "path": "frontend/src/components/Navbar.js:89",
         "route": "",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/components/Sidebar.js:7",
-        "route": "",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/App.js:96",
-        "route": "/projects",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/components/Sidebar.js:7",
-        "route": "/projects",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionBidAnalyzer",
-        "path": "client/src/pages/Dashboard.js:6",
-        "route": "/projects",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIConstructionManager",
-        "path": "frontend/src/pages/Projects.jsx",
-        "route": "/Projects",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/App.js:82",
-        "route": "/projects",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/components/Layout.js:6",
-        "route": "/projects",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/pages/Dashboard.js:49",
-        "route": "/projects",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/pages/Projects.js",
-        "route": "/Projects",
         "originApp": "construction-built-environment/construction-manager"
       },
       {
@@ -8734,6 +8795,50 @@
         "sourceProject": "AIArchitecturalDesignGenerator",
         "path": "backend/src/routes/governedDesigns.js:6",
         "route": "/:id/providers/:provider",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Quote Estimate AI",
+    "canonicalKey": "ai estimate quote",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api",
+      "page"
+    ],
+    "routes": [
+      "/QuoteEstimateAI",
+      "/ai-quote-estimate?tool=quote-estimate-ai",
+      "/quote-estimate-ai"
+    ],
+    "sourceProjects": [
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/QuoteEstimateAI.js:68",
+        "route": "/ai-quote-estimate?tool=quote-estimate-ai",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "backend/src/routes/aiHistory.js:164",
+        "route": "/quote-estimate-ai",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/QuoteEstimateAI.js",
+        "route": "/QuoteEstimateAI",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -8978,9 +9083,11 @@
     "canonicalKey": "render spec",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=render-spec",
       "/render-spec"
     ],
     "sourceProjects": [
@@ -8990,6 +9097,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=render-spec",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -9004,9 +9118,12 @@
     "canonicalKey": "analytic report",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/reports"
+    ],
     "sourceProjects": [
       "AIPlumbingElectricalHVACEstimator"
     ],
@@ -9014,6 +9131,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Reports.js:1",
+        "route": "/reports",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -9052,9 +9176,11 @@
     "canonicalKey": "restore",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=restore",
       "/designs/:id/versions/:versionId/restore"
     ],
     "sourceProjects": [
@@ -9064,6 +9190,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=restore",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -9534,11 +9667,13 @@
     "canonicalKey": "optimize schedule",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ScheduleOptimize",
+      "/ai-schedule-optimize?tool=schedule-optimize",
       "/schedule-optimize"
     ],
     "sourceProjects": [
@@ -9548,6 +9683,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/ScheduleOptimize.js:74",
+        "route": "/ai-schedule-optimize?tool=schedule-optimize",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -9730,9 +9872,11 @@
     "canonicalKey": "demand forecast seasonal",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=seasonal-demand-forecast",
       "/seasonal-demand-forecast"
     ],
     "sourceProjects": [
@@ -9742,6 +9886,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILandscapingDesignEstimator",
+        "path": "frontend/src/pages/AIToolsPage.js:43",
+        "route": "/ai-tools?tool=seasonal-demand-forecast",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AILandscapingDesignEstimator",
@@ -9756,6 +9907,7 @@
     "canonicalKey": "contract service",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "model",
       "navigation",
       "page"
@@ -9771,6 +9923,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/ServiceContracts.js:1",
+        "route": "/service-contracts",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "model",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -10059,9 +10218,11 @@
     "canonicalKey": "advisor structural",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=structural-advisor",
       "/structural-advisor"
     ],
     "sourceProjects": [
@@ -10071,6 +10232,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=structural-advisor",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -10144,6 +10312,32 @@
         "sourceProject": "AILandscapingDesignEstimator",
         "path": "backend/src/routes/timeentries.js:15",
         "route": "/summary",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Supplier Management",
+    "canonicalKey": "supplier",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/suppliers"
+    ],
+    "sourceProjects": [
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Suppliers.js:1",
+        "route": "/suppliers",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -10376,6 +10570,32 @@
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
         "path": "backend/src/routes/integrations.js:128",
         "route": "/productivity/:technician_id",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Technician Management",
+    "canonicalKey": "technician",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/technicians"
+    ],
+    "sourceProjects": [
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Technicians.js:1",
+        "route": "/technicians",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
@@ -10746,9 +10966,11 @@
     "canonicalKey": "version",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-backlog?tool=versions",
       "/designs/:id/versions"
     ],
     "sourceProjects": [
@@ -10758,6 +10980,13 @@
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIArchitecturalDesignGenerator",
+        "path": "frontend/src/pages/AIBacklog.jsx:1",
+        "route": "/ai-backlog?tool=versions",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      },
       {
         "kind": "api",
         "sourceProject": "AIArchitecturalDesignGenerator",
@@ -10788,42 +11017,12 @@
       "/warranties"
     ],
     "sourceProjects": [
-      "AIHomeRenovationProjectManager",
       "AIPlumbingElectricalHVACEstimator"
     ],
     "consolidatedFromApps": [
-      "construction-built-environment/construction-manager",
       "construction-built-environment/landscaping-design-estimator"
     ],
     "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/App.js:96",
-        "route": "/warranties",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/components/Layout.js:20",
-        "route": "/warranties",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/pages/Dashboard.js:77",
-        "route": "/warranties",
-        "originApp": "construction-built-environment/construction-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIHomeRenovationProjectManager",
-        "path": "client/src/pages/Warranties.js",
-        "route": "/Warranties",
-        "originApp": "construction-built-environment/construction-manager"
-      },
       {
         "kind": "model",
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
@@ -10871,6 +11070,32 @@
         "sourceProject": "AIPlumbingElectricalHVACEstimator",
         "path": "frontend/src/pages/Warranties.js",
         "route": "/Warranties",
+        "originApp": "construction-built-environment/landscaping-design-estimator"
+      }
+    ]
+  },
+  {
+    "name": "Warranty Tracking",
+    "canonicalKey": "tracking warranty",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/warranties"
+    ],
+    "sourceProjects": [
+      "AIPlumbingElectricalHVACEstimator"
+    ],
+    "consolidatedFromApps": [
+      "construction-built-environment/landscaping-design-estimator"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPlumbingElectricalHVACEstimator",
+        "path": "frontend/src/pages/Warranties.js:1",
+        "route": "/warranties",
         "originApp": "construction-built-environment/landscaping-design-estimator"
       }
     ]
